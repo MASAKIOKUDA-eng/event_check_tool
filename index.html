@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参加者チェックツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>参加者チェックツール</h1>
+        
+        <div class="input-section">
+            <h2>参加者リスト作成</h2>
+            <textarea id="participantList" placeholder="参加者の氏名を1行に1人ずつ入力してください"></textarea>
+            <button id="createCheckForm">チェックフォームを作成</button>
+        </div>
+        
+        <div class="check-form" id="checkFormContainer">
+            <!-- チェックフォームがここに生成されます -->
+        </div>
+        
+        <div class="result-section" id="resultSection" style="display: none;">
+            <h2>チェック結果</h2>
+            <div id="checkResult"></div>
+            <button id="exportResult">結果をエクスポート</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
